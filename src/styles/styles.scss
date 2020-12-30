@@ -4,6 +4,8 @@ $backgroundMainColor : #f1f5f8;
 $primaryColor: #2caeba;
 $darkColor: #102a42;
 
+$secondaryText: #617d98;
+
 *, *:before, *:after{
     box-sizing: border-box;
 }
@@ -126,28 +128,55 @@ section.home-cover{
             width: 50%;
 
             h1{
-                margin: .25em 0 .25em;
+                margin: .25em 0 .2em;
                 font-size: 3em;
                 font-weight: 600;
+                letter-spacing: 2px;
             }
             h2{
-                margin: 0 0 .7em;
-                font-size: 1.5em;
-                font-weight: 500;
+                margin: 0 0 3em;
+                font-size: 1.2em;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: $secondaryText;
             }
             h3{
                 margin: 0 0 .25em;
                 font-weight: 400;
+                font-size: 1.5em;
+                letter-spacing: 1px;
+                display: flex;
+                align-items: center;
 
-                span{
+                span.skill-name{
                     font-weight: 500;
                     color: $primaryColor;
+                    margin-left: .35em;
+                }
+                span.text-cursor{
+                    display: block;
+                    height: 1em;
+                    width: .6em;
+                    background: $primaryColor;
+                    margin-left: .15em;
+                    animation: cursorText .6s linear infinite;
                 }
             }
         }
         .home-cover__right-section{
             width: 50%;
         }
+    }
+}
+
+@keyframes cursorText{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
     }
 }
 
