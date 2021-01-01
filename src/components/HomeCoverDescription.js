@@ -1,5 +1,5 @@
 import React from 'react'
-import SkillAnimation from './skillAnimation'
+import SkillAnimation from './SkillAnimation'
 
 const HomeCoverDescription = () => {
     return (

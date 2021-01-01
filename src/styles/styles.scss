@@ -10,6 +10,9 @@ $secondaryColor: #617d98;
 *, *:before, *:after{
     box-sizing: border-box;
 }
+::selection{
+    background: $primaryColor;
+}
 body{
     margin: 0;
     padding: 0;
@@ -189,10 +192,40 @@ section.home-cover{
             z-index: 1;
 
             .home-cover__profile-image {
-                text-align: center;
+                margin: auto;
+                position: relative;
+                width: 25em;
                 
+                &:before {
+                    content: "";
+                    border: 4px solid $primaryColor;
+                    // border-top-color: transparent;
+                    border-right-color: transparent;
+                    width: calc(25em + 40px);
+                    border-radius: 50%;
+                    height: calc(100% + 32px);
+                    position: absolute;
+                    left: -20px;
+                    top: -18px;
+                }
+                &:after {
+                    content: "";
+                    border: 3px solid $darkColor;
+                    border-left-color: transparent;
+                    // border-bottom-color: transparent;
+                    width: calc(25em + 20px);
+                    border-radius: 50%;
+                    height: calc(100% + 12px);
+                    position: absolute;
+                    left: -10px;
+                    top: -8px;
+                    transition: transform .3s ease-out;
+                }
+                &:hover:after{
+                    transform: rotate(360deg);
+                }
                 img{
-                    max-height: 25em;
+                    max-width: 25em;
                 }
             }
         }
@@ -260,7 +293,139 @@ section.home-cover{
         }
     }
 }
+section.home-experience{
+    padding: 3em 0;
 
+    h2{
+        font-size: 2.3em;
+        text-align: center;
+        margin-bottom: .6em;
+    }
+    .dash-top-line{
+        margin: auto
+    }
+    .home-experience__experiences{
+        padding: 2em 0;
+        display: flex;
+
+        .experience-menu{
+            
+            ul{
+                padding: 0;
+                list-style: none;
+
+                li{
+                    padding: .7em;
+                    margin-bottom: 6px;
+                    border-left: 2px solid transparent;
+                    cursor: pointer;
+                    font-weight: 400;
+                    text-align: center;
+                    
+                    &:hover{
+                        border-color: $primaryColor;
+                        color: $primaryColor
+                    }
+                }
+            }
+        }
+    }
+}
+section.tools-and-technologies{
+    padding: 4em 0;
+
+    h2{
+        font-size: 2.3em;
+        text-align: center;
+        margin-bottom: .6em;
+    }
+    .dash-top-line{
+        margin: auto
+    }
+    .tools-and-technologies__icons{
+        margin: 3em 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        cursor: pointer;
+
+        .skill{
+            margin: 0 1em;
+        }
+        h4{
+            text-align: center;
+            margin-top: 0;
+            font-weight: 400;
+            
+        }
+        $reactColor: #61DBFB;
+        $reduxColor: #764abc;
+        $nodeColor: #68a063;
+        $expressColor: #3e4035;
+        $mongoDB: #419242;
+        $javaScriptColor: #e8d44d;
+        $jQueryColor: #74c7ea;
+        $css3Color: #39acd9;
+        $html5Color: #f75431;
+        $phpColor: #7377ad;
+        $wordPress: #207196;
+        $javaColor: #f20e10;
+        $kotlinColor: #f78a45;
+        $mySqlColor: #3562aa;
+
+        i{
+            font-size: 6em;
+            margin-bottom: 15px;
+            display: block;
+
+            &.devicon-react-plain{
+                color: $reactColor
+            }
+            &.devicon-redux-plain{
+                color: $reduxColor
+            }
+            &.devicon-nodejs-plain{
+                color: $nodeColor
+            }
+            &.devicon-express-original{
+                color: $expressColor
+            }
+            &.devicon-mongodb-plain{
+                color: $mongoDB
+            }
+            &.devicon-javascript-plain{
+                color: $javaScriptColor
+            }
+            &.devicon-jquery-plain{
+                color: $jQueryColor
+            }
+            &.devicon-css3-plain{
+                color: $css3Color
+            }
+            &.devicon-html5-plain{
+                color: $html5Color
+            }
+            &.devicon-php-plain{
+                color: $phpColor
+            }
+            &.devicon-wordpress-plain{
+                color: $wordPress
+            }
+            &.devicon-java-plain{
+                color: $javaColor
+            }
+            &.devicon-kotlin-plain{
+                color: $kotlinColor
+            }
+            &.devicon-mysql-plain{
+                color: $mySqlColor
+            }
+            &:hover{
+                color: $darkColor
+            }
+        }
+    }
+}
 
 
 @keyframes cursorText{

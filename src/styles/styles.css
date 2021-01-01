@@ -3,6 +3,14 @@
           box-sizing: border-box;
 }
 
+::-moz-selection {
+  background: #2caeba;
+}
+
+::selection {
+  background: #2caeba;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -230,11 +238,46 @@ section.home-cover .home-cover-content .home-cover__right-section {
 }
 
 section.home-cover .home-cover-content .home-cover__right-section .home-cover__profile-image {
-  text-align: center;
+  margin: auto;
+  position: relative;
+  width: 25em;
+}
+
+section.home-cover .home-cover-content .home-cover__right-section .home-cover__profile-image:before {
+  content: "";
+  border: 4px solid #2caeba;
+  border-right-color: transparent;
+  width: calc(25em + 40px);
+  border-radius: 50%;
+  height: calc(100% + 32px);
+  position: absolute;
+  left: -20px;
+  top: -18px;
+}
+
+section.home-cover .home-cover-content .home-cover__right-section .home-cover__profile-image:after {
+  content: "";
+  border: 3px solid #102a42;
+  border-left-color: transparent;
+  width: calc(25em + 20px);
+  border-radius: 50%;
+  height: calc(100% + 12px);
+  position: absolute;
+  left: -10px;
+  top: -8px;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+
+section.home-cover .home-cover-content .home-cover__right-section .home-cover__profile-image:hover:after {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 section.home-cover .home-cover-content .home-cover__right-section .home-cover__profile-image img {
-  max-height: 25em;
+  max-width: 25em;
 }
 
 section.home-cover .home-cover-animation {
@@ -311,6 +354,149 @@ section.home-cover .home-cover-animation div:nth-child(6) {
   bottom: -160px;
   -webkit-animation: rectangleAnimationUp 15s linear 2s infinite;
           animation: rectangleAnimationUp 15s linear 2s infinite;
+}
+
+section.home-experience {
+  padding: 3em 0;
+}
+
+section.home-experience h2 {
+  font-size: 2.3em;
+  text-align: center;
+  margin-bottom: .6em;
+}
+
+section.home-experience .dash-top-line {
+  margin: auto;
+}
+
+section.home-experience .home-experience__experiences {
+  padding: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.home-experience .home-experience__experiences .experience-menu ul {
+  padding: 0;
+  list-style: none;
+}
+
+section.home-experience .home-experience__experiences .experience-menu ul li {
+  padding: .7em;
+  margin-bottom: 6px;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+  font-weight: 400;
+  text-align: center;
+}
+
+section.home-experience .home-experience__experiences .experience-menu ul li:hover {
+  border-color: #2caeba;
+  color: #2caeba;
+}
+
+section.tools-and-technologies {
+  padding: 4em 0;
+}
+
+section.tools-and-technologies h2 {
+  font-size: 2.3em;
+  text-align: center;
+  margin-bottom: .6em;
+}
+
+section.tools-and-technologies .dash-top-line {
+  margin: auto;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons {
+  margin: 3em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons .skill {
+  margin: 0 1em;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons h4 {
+  text-align: center;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i {
+  font-size: 6em;
+  margin-bottom: 15px;
+  display: block;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-react-plain {
+  color: #61DBFB;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-redux-plain {
+  color: #764abc;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-nodejs-plain {
+  color: #68a063;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-express-original {
+  color: #3e4035;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-mongodb-plain {
+  color: #419242;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-javascript-plain {
+  color: #e8d44d;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-jquery-plain {
+  color: #74c7ea;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-css3-plain {
+  color: #39acd9;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-html5-plain {
+  color: #f75431;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-php-plain {
+  color: #7377ad;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-wordpress-plain {
+  color: #207196;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-java-plain {
+  color: #f20e10;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-kotlin-plain {
+  color: #f78a45;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-mysql-plain {
+  color: #3562aa;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i:hover {
+  color: #102a42;
 }
 
 @-webkit-keyframes cursorText {
