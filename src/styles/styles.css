@@ -401,13 +401,14 @@ section.tools-and-technologies {
 }
 
 section.tools-and-technologies h2 {
-  font-size: 2.3em;
+  font-size: 2.1em;
   text-align: center;
-  margin-bottom: .6em;
+  margin-bottom: .5em;
 }
 
 section.tools-and-technologies .dash-top-line {
   margin: auto;
+  height: 5px;
 }
 
 section.tools-and-technologies .tools-and-technologies__icons {
@@ -420,11 +421,13 @@ section.tools-and-technologies .tools-and-technologies__icons {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  cursor: pointer;
+  margin: 3em auto 4em;
+  max-width: 900px;
 }
 
 section.tools-and-technologies .tools-and-technologies__icons .skill {
-  margin: 0 1em;
+  margin: .8em 1.2em;
+  cursor: pointer;
 }
 
 section.tools-and-technologies .tools-and-technologies__icons h4 {
@@ -434,7 +437,7 @@ section.tools-and-technologies .tools-and-technologies__icons h4 {
 }
 
 section.tools-and-technologies .tools-and-technologies__icons i {
-  font-size: 6em;
+  font-size: 5.7em;
   margin-bottom: 15px;
   display: block;
 }
@@ -471,6 +474,14 @@ section.tools-and-technologies .tools-and-technologies__icons i.devicon-css3-pla
   color: #39acd9;
 }
 
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-sass-plain {
+  color: #c76395;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-bootstrap-plain {
+  color: #533b78;
+}
+
 section.tools-and-technologies .tools-and-technologies__icons i.devicon-html5-plain {
   color: #f75431;
 }
@@ -495,8 +506,41 @@ section.tools-and-technologies .tools-and-technologies__icons i.devicon-mysql-pl
   color: #3562aa;
 }
 
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-git-plain {
+  color: #e84e31;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-slack-plain {
+  color: #481449;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-trello-plain {
+  color: #0189db;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-visualstudio-plain {
+  color: #0075c5;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-android-plain {
+  color: #7cb045;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons i.devicon-atom-plain {
+  color: #5caf79;
+}
+
 section.tools-and-technologies .tools-and-technologies__icons i:hover {
   color: #102a42;
+}
+
+section.tools-and-technologies .tools-and-technologies__icons svg {
+  width: 5.7em;
+  height: 5.7em;
+  margin: 0 auto 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @-webkit-keyframes cursorText {

@@ -335,28 +335,30 @@ section.tools-and-technologies{
     padding: 4em 0;
 
     h2{
-        font-size: 2.3em;
+        font-size: 2.1em;
         text-align: center;
-        margin-bottom: .6em;
+        margin-bottom: .5em;
     }
     .dash-top-line{
-        margin: auto
+        margin: auto;
+        height: 5px;
     }
     .tools-and-technologies__icons{
         margin: 3em 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        cursor: pointer;
+        margin: 3em auto 4em;
+        max-width: 900px;
 
         .skill{
-            margin: 0 1em;
+            margin: .8em 1.2em;
+            cursor: pointer;
         }
         h4{
             text-align: center;
             margin-top: 0;
-            font-weight: 400;
-            
+            font-weight: 400;     
         }
         $reactColor: #61DBFB;
         $reduxColor: #764abc;
@@ -366,15 +368,23 @@ section.tools-and-technologies{
         $javaScriptColor: #e8d44d;
         $jQueryColor: #74c7ea;
         $css3Color: #39acd9;
+        $scssColor: #c76395;
+        $bootstrapColor: #533b78;
         $html5Color: #f75431;
         $phpColor: #7377ad;
         $wordPress: #207196;
         $javaColor: #f20e10;
         $kotlinColor: #f78a45;
         $mySqlColor: #3562aa;
+        $gitColor: #e84e31;
+        $slackColor: #481449;
+        $trelloColor: #0189db;
+        $VSCodeColor: #0075c5;
+        $androidColor: #7cb045;
+        $atomColor: #5caf79;
 
         i{
-            font-size: 6em;
+            font-size: 5.7em;
             margin-bottom: 15px;
             display: block;
 
@@ -402,6 +412,12 @@ section.tools-and-technologies{
             &.devicon-css3-plain{
                 color: $css3Color
             }
+            &.devicon-sass-plain{
+                color: $scssColor
+            }
+            &.devicon-bootstrap-plain{
+                color: $bootstrapColor;
+            }
             &.devicon-html5-plain{
                 color: $html5Color
             }
@@ -420,9 +436,33 @@ section.tools-and-technologies{
             &.devicon-mysql-plain{
                 color: $mySqlColor
             }
+            &.devicon-git-plain{
+                color: $gitColor
+            }
+            &.devicon-slack-plain{
+                color: $slackColor
+            }
+            &.devicon-trello-plain{
+                color: $trelloColor
+            }
+            &.devicon-visualstudio-plain{
+                color: $VSCodeColor
+            }
+            &.devicon-android-plain{
+                color: $androidColor
+            }
+            &.devicon-atom-plain{
+                color: $atomColor
+            }
             &:hover{
                 color: $darkColor
             }
+        }
+        svg{
+            width: 5.7em;
+            height: 5.7em;
+            margin: 0 auto 15px;
+            display: flex;
         }
     }
 }
