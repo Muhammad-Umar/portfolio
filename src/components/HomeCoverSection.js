@@ -11,7 +11,7 @@ const HomeCoverSection = () => {
                         <HomeCoverDescription />
                     </div>
                     <div className="home-cover__right-section">
-                        <div class="home-cover__profile-image">
+                        <div className="home-cover__profile-image">
                             <img src={profileImage} className="responsive-image" alt=""/>
                         </div>
                     </div>

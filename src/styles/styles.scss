@@ -6,6 +6,34 @@ $primaryColor: #2caeba;
 $darkColor: #102a42;
 $secondaryColor: #617d98;
 
+// Icon Colors
+$reactColor: #61DBFB;
+$reduxColor: #764abc;
+$nodeColor: #68a063;
+$expressColor: #3e4035;
+$mongoDB: #419242;
+$javaScriptColor: #e8d44d;
+$jQueryColor: #74c7ea;
+$css3Color: #39acd9;
+$scssColor: #c76395;
+$bootstrapColor: #533b78;
+$html5Color: #f75431;
+$phpColor: #7377ad;
+$wordPress: #207196;
+$javaColor: #f20e10;
+$kotlinColor: #f78a45;
+$mySqlColor: #3562aa;
+$gitColor: #e84e31;
+$slackColor: #481449;
+$trelloColor: #0189db;
+$VSCodeColor: #0075c5;
+$androidColor: #7cb045;
+$atomColor: #5caf79;
+$AWSColor: #ff9900;
+$photoshopColor: #141a4c;
+$wooColor: #96598b;
+$facebookColor: #4867aa;
+$linkedInColor: #0077b0;
 
 *, *:before, *:after{
     box-sizing: border-box;
@@ -293,44 +321,7 @@ section.home-cover{
         }
     }
 }
-section.home-experience{
-    padding: 3em 0;
 
-    h2{
-        font-size: 2.3em;
-        text-align: center;
-        margin-bottom: .6em;
-    }
-    .dash-top-line{
-        margin: auto
-    }
-    .home-experience__experiences{
-        padding: 2em 0;
-        display: flex;
-
-        .experience-menu{
-            
-            ul{
-                padding: 0;
-                list-style: none;
-
-                li{
-                    padding: .7em;
-                    margin-bottom: 6px;
-                    border-left: 2px solid transparent;
-                    cursor: pointer;
-                    font-weight: 400;
-                    text-align: center;
-                    
-                    &:hover{
-                        border-color: $primaryColor;
-                        color: $primaryColor
-                    }
-                }
-            }
-        }
-    }
-}
 section.tools-and-technologies{
     padding: 4em 0;
 
@@ -360,33 +351,11 @@ section.tools-and-technologies{
             margin-top: 0;
             font-weight: 400;     
         }
-        $reactColor: #61DBFB;
-        $reduxColor: #764abc;
-        $nodeColor: #68a063;
-        $expressColor: #3e4035;
-        $mongoDB: #419242;
-        $javaScriptColor: #e8d44d;
-        $jQueryColor: #74c7ea;
-        $css3Color: #39acd9;
-        $scssColor: #c76395;
-        $bootstrapColor: #533b78;
-        $html5Color: #f75431;
-        $phpColor: #7377ad;
-        $wordPress: #207196;
-        $javaColor: #f20e10;
-        $kotlinColor: #f78a45;
-        $mySqlColor: #3562aa;
-        $gitColor: #e84e31;
-        $slackColor: #481449;
-        $trelloColor: #0189db;
-        $VSCodeColor: #0075c5;
-        $androidColor: #7cb045;
-        $atomColor: #5caf79;
-
-        i{
+        i {
             font-size: 5.7em;
             margin-bottom: 15px;
             display: block;
+            text-align: center;
 
             &.devicon-react-plain{
                 color: $reactColor
@@ -454,6 +423,21 @@ section.tools-and-technologies{
             &.devicon-atom-plain{
                 color: $atomColor
             }
+            &.devicon-amazonwebservices-plain{
+                color: $AWSColor
+            }
+            &.devicon-photoshop-plain{
+                color: $photoshopColor
+            }
+            &.devicon-woocommerce-plain{
+                color: $wooColor
+            }
+            &.devicon-facebook-plain{
+                color: $facebookColor
+            }
+            &.devicon-linkedin-plain{
+                color: $linkedInColor
+            }
             &:hover{
                 color: $darkColor
             }
@@ -467,6 +451,109 @@ section.tools-and-technologies{
     }
 }
 
+section.home-experience{
+    padding: 3em 0;
+    background: #fff;
+
+    h2{
+        font-size: 2.3em;
+        text-align: center;
+        margin-bottom: .6em;
+    }
+    .dash-top-line{
+        margin: auto
+    }
+    .home-experience__experiences{
+        padding: 4em 0;
+        display: flex;
+
+        .experience-menu{
+            flex-shrink: 0;
+
+            ul{
+                padding: 0;
+                list-style: none;
+                margin: 0;
+
+                li{
+                    padding: 10px 1.2em;
+                    margin-bottom: .8em;
+                    border-left: 3px solid transparent;
+                    cursor: pointer;
+                    font-weight: 400;
+                    text-align: center;
+                    
+                    &:hover, &.active{
+                        border-color: $primaryColor;
+                        color: $primaryColor
+                    }
+                }
+            }
+        }
+        .experience-boxes{
+            padding: 0 2em;
+            margin-left: 2em;
+
+            .experience-box{
+                display: none;
+
+                &.active{
+                    display: block;
+                }
+                h3{
+                    margin-top: 0px;
+                    margin-bottom: 8px;
+                    font-size: 1.5em;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                }
+                span{
+                    color: #fff;
+                    background: $primaryColor;
+                    padding: 5px 7px;
+                    font-size: .9em;
+                    border-radius: 4px;
+                    display: inline-block;
+                    margin-bottom: 18px;
+                }
+                p {
+                    letter-spacing: 2px;
+                    font-size: 1em;
+                    margin-top: 0;
+
+                }
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    margin: 0 0 2em;
+
+                    li{
+                        padding: 5px 0 5px 25px;
+                        position: relative;
+
+                        &:before{
+                            content: "";
+                            width: 7px;
+                            height: 7px;
+                            border-radius: 50%;
+                            background: #2caeba;
+                            position: absolute;
+                            top: 50%;
+                            left: 0 ;
+                            transform: translateY(-50%);
+                            transition: background .3s linear;
+                        }
+                        &:hover::before{
+                            background: $darkColor;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+    }
+}
 
 @keyframes cursorText{
     0%{

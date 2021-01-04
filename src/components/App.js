@@ -10,8 +10,8 @@ const App = () => {
     <div className="App">
       <Navbar />
       <HomeCoverSection />
-      {/* HomeExperience /> */}
       <ToolsAndTechnologies />
+      <HomeExperience />
     </div>
   );
 }

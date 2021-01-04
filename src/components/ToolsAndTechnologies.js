@@ -12,59 +12,59 @@ const ToolsAndTechnologies = () => {
                 <span className="dash-top-line"></span>
                 <div className="tools-and-technologies__icons">
                     <div className="skill">
-                        <i class="devicon-react-plain"></i>
+                        <i className="devicon-react-plain"></i>
                         <h4>React</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-redux-plain"></i>
+                        <i className="devicon-redux-plain"></i>
                         <h4>Redux</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-nodejs-plain"></i>
+                        <i className="devicon-nodejs-plain"></i>
                         <h4>NodeJs</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-express-original"></i>
+                        <i className="devicon-express-original"></i>
                         <h4>Express</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-javascript-plain"></i>
+                        <i className="devicon-javascript-plain"></i>
                         <h4>JavaScript</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-jquery-plain"></i>
+                        <i className="devicon-jquery-plain"></i>
                         <h4>jQuery</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-css3-plain"></i>
+                        <i className="devicon-css3-plain"></i>
                         <h4>CSS</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-sass-plain"></i>
+                        <i className="devicon-sass-plain"></i>
                         <h4>SCSS</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-bootstrap-plain"></i>
+                        <i className="devicon-bootstrap-plain"></i>
                         <h4>Bootstrap</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-html5-plain"></i>
+                        <i className="devicon-html5-plain"></i>
                         <h4>HTML 5</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-php-plain"></i>
+                        <i className="devicon-php-plain"></i>
                         <h4>PHP</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-wordpress-plain"></i>
+                        <i className="devicon-wordpress-plain"></i>
                         <h4>WordPress</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-java-plain"></i>
+                        <i className="devicon-java-plain"></i>
                         <h4>Java</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-kotlin-plain"></i>
+                        <i className="devicon-kotlin-plain"></i>
                         <h4>Kotlin</h4>
                     </div>
                 </div>
@@ -73,11 +73,11 @@ const ToolsAndTechnologies = () => {
                 <span className="dash-top-line"></span>
                 <div className="tools-and-technologies__icons">
                 <div className="skill">
-                        <i class="devicon-mongodb-plain"></i>
+                        <i className="devicon-mongodb-plain"></i>
                         <h4>MongoDB</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-mysql-plain"></i>
+                        <i className="devicon-mysql-plain"></i>
                         <h4>MySQL</h4>
                     </div>
                     <div className="skill">
@@ -90,19 +90,19 @@ const ToolsAndTechnologies = () => {
                 <span className="dash-top-line"></span>
                 <div className="tools-and-technologies__icons">
                 <div className="skill">
-                        <i class="devicon-git-plain"></i>
+                        <i className="devicon-git-plain"></i>
                         <h4>Git</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-github-plain"></i>
+                        <i className="devicon-github-plain"></i>
                         <h4>Github</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-slack-plain"></i>
+                        <i className="devicon-slack-plain"></i>
                         <h4>Slack</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-trello-plain"></i>
+                        <i className="devicon-trello-plain"></i>
                         <h4>Trello</h4>
                     </div>
                 </div>
@@ -111,11 +111,11 @@ const ToolsAndTechnologies = () => {
                 <span className="dash-top-line"></span>
                 <div className="tools-and-technologies__icons">
                 <div className="skill">
-                        <i class="devicon-visualstudio-plain"></i>
+                        <i className="devicon-visualstudio-plain"></i>
                         <h4>VS Code</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-android-plain"></i>
+                        <i className="devicon-android-plain"></i>
                         <h4>Android Studio</h4>
                     </div>
                     <div className="skill">
@@ -127,7 +127,7 @@ const ToolsAndTechnologies = () => {
                         <h4>Sublime Text 3</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-atom-plain"></i>
+                        <i className="devicon-atom-plain"></i>
                         <h4>Atom</h4>
                     </div>
                 </div>
@@ -135,25 +135,25 @@ const ToolsAndTechnologies = () => {
                 <h2>Extra Skills</h2>
                 <span className="dash-top-line"></span>
                 <div className="tools-and-technologies__icons">
-                <div className="skill">
-                        <i class="devicon-visualstudio-plain"></i>
-                        <h4>VS Code</h4>
+                    <div className="skill">
+                        <i className="devicon-amazonwebservices-plain"></i>
+                        <h4>AWS</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-android-plain"></i>
-                        <h4>Android Studio</h4>
+                        <i className="devicon-photoshop-plain"></i>
+                        <h4>Photoshop</h4>
                     </div>
                     <div className="skill">
-                        <NetbeansIcon />
-                        <h4>Netbeans</h4>
+                        <i className="devicon-woocommerce-plain"></i>
+                        <h4>WooCommerce</h4>
                     </div>
                     <div className="skill">
-                        <SublimeIcon />
-                        <h4>Sublime Text 3</h4>
+                        <i className="devicon-facebook-plain"></i>
+                        <h4>Facebook Graph Api</h4>
                     </div>
                     <div className="skill">
-                        <i class="devicon-atom-plain"></i>
-                        <h4>Atom</h4>
+                        <i className="devicon-linkedin-plain"></i>
+                        <h4>LinkedIn API</h4>
                     </div>
                 </div>
             </div>
