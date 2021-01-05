@@ -1,7 +1,7 @@
 import React from 'react'
 import Project from "../layouts/Project"
-import LeftProject from '../layouts/LeftProject'
-import RightProject from '../layouts/RightProject'
+
+import RecentProjectsData from "../../data";
 
 const RecentProjects = () => {
     return (
@@ -11,10 +11,11 @@ const RecentProjects = () => {
                 <span className="dash-top-line"></span>   
 
                 <div className="recent-projects__list">
-                    <RightProject />
-                    <LeftProject />
-                    <Project layout="right" />
-                    <Project layout="left" />
+                    {
+                        RecentProjectsData.map((data, index) => {
+                            return <Project key={index} layout={index % 2 === 0 ? 'right' : 'left'} data={data}/>
+                        })
+                    }
                 </div>     
             </div>
         </section>

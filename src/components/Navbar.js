@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import {Link} from "react-router-dom";
 import SocialLinks from "./SocialLinks";
 
 
@@ -24,10 +25,10 @@ const Navbar = () => {
                     </a>
                 </div>
                 <div className="navbar__menu-items">
-                    <a href={'/'}>Home</a>
-                    <a href={'/'}>About</a>
-                    <a href={'/'}>Portfolio</a>
-                    <a href={'/'}>Contact</a>
+                    <Link to={'/'}>Home</Link>
+                    <Link to={'/about-me'}>About</Link>
+                    <Link to={'/portfolio'}>Portfolio</Link>
+                    <Link to={'/contact'}>Contact</Link>
                 </div>
                 <div className="navbar__social-items">
                     <SocialLinks />

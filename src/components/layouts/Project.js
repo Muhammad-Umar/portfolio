@@ -1,25 +1,26 @@
 import React from 'react'
-import ChannelSliderImage from "../../images/channel-slider.jpg"
 import GitIcon from "@material-ui/icons/GitHub";
 import LinkIcon from "@material-ui/icons/OpenInNew"
 
 const Project = (props) => {
+    const {data, layout} = props;
+
     return (
-        <div className={`recent-project project-${props.layout} == "right" ?  `}>
+        <div className={`recent-project project-${layout}`}>
             <div className="recent-project__image">
-                <img src={ChannelSliderImage} alt="Channel Slider"/>
+                <img src={data.image} alt="Channel Slider"/>
                 <span className="background-overlay"></span>
             </div>
             <div className="recent-project__text">
-                <span className="project-count">01</span>
-                <h3>Channel Episodes Slider</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent hendrerit arcu massa, id aliquam tortor auctor at. Donec ultrices at nunc eget volutpat. Nam rutrum quis est in sagittis. Suspendisse potenti. Sed eu eleifend urna. Integer ac velit purus. </p>
+                <span className="project-count">{data.index}</span>
+                <h3>{data.title}</h3>
+                <p>{data.description}</p>
                 <div className="project-technologies">
-                    <span className="">React</span>
+                    <span className="">{data.technologies}</span>
                 </div>
                 <div className="actions">
-                    <a className="git-redirect" href={"/"} rel="noreferrer" target="_blank"><GitIcon/></a>
-                    <a className="deploy-redirect" href={"/"} rel="noreferrer" target="_blank"><LinkIcon /></a>
+                    <a className="git-redirect" href={data.gitLink} rel="noreferrer" target="_blank"><GitIcon/></a>
+                    <a className="deploy-redirect" href={data.demoLink} rel="noreferrer" target="_blank"><LinkIcon /></a>
                 </div>
             </div>
         </div>    

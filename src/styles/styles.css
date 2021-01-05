@@ -31,6 +31,7 @@ img {
   height: 100%;
   padding: 0 15px;
   margin: auto;
+  overflow: hidden;
 }
 
 .dash-top-line {
@@ -780,6 +781,120 @@ section.recent-projects .recent-projects__list {
 .recent-project.project-left .recent-project__text {
   left: auto;
   right: 40%;
+}
+
+section.contact {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+section.contact .contact__form {
+  background: #fff;
+  max-width: 500px;
+  margin: 3em auto;
+  padding: 1.5em 2.5em;
+  border-radius: 20px;
+}
+
+section.contact .contact__form h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+section.contact .contact__form input[type="text"], section.contact .contact__form input[type="email"], section.contact .contact__form textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 1.2em 1.5em;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 30px;
+  border: 2px solid #dae2ec;
+  background: #fafcfd;
+}
+
+section.contact .contact__form textarea {
+  overflow: hidden;
+}
+
+section.contact .contact__form input:focus, section.contact .contact__form textarea:focus {
+  outline: none;
+  background: #fff;
+  border-color: #2caeba;
+}
+
+section.contact .contact__form .input-submit {
+  text-align: center;
+}
+
+section.contact .contact__form .input-submit input[type="submit"] {
+  background: #2caeba;
+  color: #fff;
+  border: 2px solid #2caeba;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 4px rgba(68, 68, 68, 0.3);
+          box-shadow: 0px 3px 4px rgba(68, 68, 68, 0.3);
+}
+
+section.contact .contact__form .input-submit input[type="submit"]:hover {
+  background: #fff;
+  color: #102a42;
+}
+
+section.portfolio {
+  padding-top: 80px;
+}
+
+footer {
+  background: #102a42;
+  color: #fff;
+  padding: 1.7em 0 1.5em;
+}
+
+footer .social-links {
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: .8em;
+}
+
+footer .social-links a {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+footer .social-links a svg {
+  width: 1em;
+}
+
+footer > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+}
+
+footer > p * {
+  margin: 0 4px;
+}
+
+footer > p span {
+  color: #2caeba;
 }
 
 @-webkit-keyframes cursorText {
