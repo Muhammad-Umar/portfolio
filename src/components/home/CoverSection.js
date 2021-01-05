@@ -1,14 +1,14 @@
 import React from 'react'
-import HomeCoverDescription from './HomeCoverDescription'
-import profileImage from '../images/portfolio.png';
+import CoverDescription from './CoverDescription'
+import profileImage from '../../images/portfolio.png';
 
-const HomeCoverSection = () => {
+const CoverSection = () => {
     return (
         <section className="home-cover">
             <div className="container">
                 <div className="home-cover-content ">
                     <div className="home-cover__left-section">
-                        <HomeCoverDescription />
+                        <CoverDescription />
                     </div>
                     <div className="home-cover__right-section">
                         <div className="home-cover__profile-image">
@@ -29,4 +29,4 @@ const HomeCoverSection = () => {
     )
 }
 
-export default HomeCoverSection;
+export default CoverSection;

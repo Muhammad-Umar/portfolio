@@ -1,7 +1,7 @@
 import React from 'react'
 import SkillAnimation from './SkillAnimation'
 
-const HomeCoverDescription = () => {
+const CoverDescription = () => {
     return (
         <div className="cover-description">
             <span className="dash-top-line"></span>
@@ -11,5 +11,5 @@ const HomeCoverDescription = () => {
         </div>
     )
 }
-
-export default HomeCoverDescription
+    
+export default CoverDescription

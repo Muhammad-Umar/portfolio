@@ -5,6 +5,7 @@ $backgroundHomeCover: #e0fcff;
 $primaryColor: #2caeba;
 $darkColor: #102a42;
 $secondaryColor: #617d98;
+$lightColor: #dae2ec;
 
 // Icon Colors
 $reactColor: #61DBFB;
@@ -54,7 +55,7 @@ img{
     max-width: 100%;
 }
 .container{
-    max-width: 1200px;
+    max-width: 1100px;
     height: 100%;
     padding: 0 15px;
     margin: auto;
@@ -464,7 +465,7 @@ section.home-experience{
         margin: auto
     }
     .home-experience__experiences{
-        padding: 4em 0;
+        padding: 4em 0 0;
         display: flex;
 
         .experience-menu{
@@ -555,6 +556,131 @@ section.home-experience{
     }
 }
 
+section.recent-projects{
+    padding: 3em 0; 
+
+    h2{
+        font-size: 2.3em;
+        text-align: center;
+        margin-bottom: .6em;
+    }
+    .dash-top-line{
+        margin: auto;
+    }
+    .recent-projects__list{
+        padding: 4em 0 0;
+    }
+
+}
+
+.recent-project{
+    position: relative;
+    margin-bottom: 4em;
+    cursor: pointer;
+
+    .recent-project__image{
+        position: relative;
+        width: 65%;
+        border-radius: 7px;
+        overflow: hidden;
+        display: flex;
+        height: 28em;
+        
+        span.background-overlay{
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, $primaryColor, $darkColor );
+            opacity: .85;
+            transition: all .4s ease-out;
+        }
+    }
+    &:hover span.background-overlay{
+        opacity: 0;
+    }
+    .recent-project__text {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        width: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        background: #fff;
+        padding: 2em;
+        height: 20em;
+        border-radius: 5px;
+        box-shadow: 0px 0px 12px rgba(#444444, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        span.project-count{
+            color: $primaryColor;
+            font-size: 1.5em;
+            display: block;
+            margin-bottom: 6px;
+        }
+        h3{
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.5em;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        p{
+            text-align: justify;
+            letter-spacing: 1px;
+            word-spacing: 4px;
+            font-weight: 400;
+            flex-grow: 1;
+            margin: 0;
+            margin-bottom: 12px;
+        }
+        .project-technologies{
+            display: flex;
+            margin-bottom: 12px;
+
+            span{
+                background: $lightColor;
+                text-transform: uppercase;
+                padding: 4px 7px;
+                font-size: .9em;
+                margin-right: 6px;
+                color: #617d98;
+                border-radius: 4px;
+            }
+        }
+        .actions{
+
+            a{
+                margin-right: 6px;
+
+                svg{
+                    font-size: 20px;
+                    fill: $primaryColor;
+
+                    &:hover{
+                        fill: $darkColor;
+                    }
+                }
+            }
+        }
+    }
+    &.project-left{
+
+        .recent-project__image{
+            margin-left: auto;
+        }    
+        .recent-project__text{
+            left: auto;
+            right: 40%;
+        }
+    }
+}
+
 @keyframes cursorText{
     0%{
         opacity: 0;
@@ -609,6 +735,6 @@ section.home-experience{
 // extra large
 @media only screen and (min-width: 1200px){
     .container{
-        max-width: 90%;
+        max-width: 80%;
     }   
 }

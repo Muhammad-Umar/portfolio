@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const HomeExperience = () => {
+const Experience = () => {
     const [activeExperience, setActiveExperience] = useState(0);
 
     const activateExperience = (event, index) => {
@@ -42,6 +42,8 @@ const HomeExperience = () => {
                         </div>
                         <div className={"experience-box experience-box-2" + activeExperienceCheck(1)}>
                             <h3>Full Stack Developer</h3>
+                            <span >Fiverr</span>
+                            <p>March 2016 - Present</p>
                             <ul>
                                 <li>Fiverr freelance developer.</li>
                                 <li>4 years of work experience.</li>
@@ -52,20 +54,25 @@ const HomeExperience = () => {
                         </div>
                         <div className={"experience-box experience-box-3" + activeExperienceCheck(2)}>
                             <h3>Final Year Project</h3>
+                            <span >Android Application</span>
+                            <p>2018 - 2019</p>
                             <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>Bachelors Final year project.</li>
+                                <li>Location based social media application for Android.</li>
+                                <li>Application capable of performing all functions like any other
+                                    social media application along with core function for providing
+                                    users location information on map.</li>
+                                <li>Developed using KOTLIN</li>
                             </ul>
                             <h3>Samester Project</h3>
+                            <span >Android Application</span>
+                            <p>Sept 2016 - Jan 2017</p>
                                 <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>Semester Project for Database Course</li>
+                                    <li>Bus Management system using Node, Express, EJS, MySQL</li>
+                                    <li>The system performed all important functions like, bus routes
+                                        schedule, ticket reservation, ticket cancellation, employee’s
+                                        information, customer information etc.</li>
                                 </ul>
                         </div>
                     </div>
@@ -75,4 +82,4 @@ const HomeExperience = () => {
     )
 }
 
-export default HomeExperience
+export default Experience

@@ -1,7 +1,7 @@
 import React from 'react'
-import FirebaseIcon from "../icons/FirebaseIcon"
-import NetbeansIcon from "../icons/NetbeansIcon"
-import SublimeIcon from "../icons/SublimeIcon"
+import FirebaseIcon from "../../icons/FirebaseIcon"
+import NetbeansIcon from "../../icons/NetbeansIcon"
+import SublimeIcon from "../../icons/SublimeIcon"
 
 const ToolsAndTechnologies = () => {
     return (
