@@ -1272,4 +1272,113 @@ section.error-404 .error-text p {
     display: -ms-flexbox;
     display: flex;
   }
+  section.home-cover {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 2em;
+  }
+  section.home-cover .home-cover-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+  }
+  section.home-cover .home-cover-content .home-cover__left-section {
+    width: 100%;
+    margin-top: 4em;
+  }
+  section.home-cover .home-cover-content .home-cover__left-section .cover-description h1 {
+    font-size: 1.8em;
+  }
+  section.home-cover .home-cover-content .home-cover__left-section .cover-description h2 {
+    font-size: 1em;
+  }
+  section.home-cover .home-cover-content .home-cover__left-section .cover-description h3 {
+    font-size: 1.2em;
+  }
+  section.home-cover .home-cover-content .home-cover__right-section {
+    margin-top: 2em;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 70%;
+    max-width: 350px;
+  }
+  section.home-cover .home-cover-content .home-cover__right-section .home-cover__profile-image {
+    width: 100%;
+  }
+  section.home-cover .home-cover-content .home-cover__right-section .home-cover__profile-image img {
+    max-width: 100%;
+  }
+  section.home-cover .home-cover-content .home-cover__right-section .home-cover__profile-image:before {
+    width: calc(100% + 40px);
+  }
+  section.home-cover .home-cover-content .home-cover__right-section .home-cover__profile-image:after {
+    width: calc(100% + 12px);
+    left: -4px;
+  }
+  section.tools-and-technologies h2 {
+    font-size: 1.6em;
+  }
+  section.home-experience h2 {
+    font-size: 1.6em;
+  }
+  section.home-experience .home-experience__experiences {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.home-experience .home-experience__experiences .experience-menu {
+    margin-bottom: 1.5em;
+  }
+  section.home-experience .home-experience__experiences .experience-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.home-experience .home-experience__experiences .experience-menu ul li {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+  section.home-experience .home-experience__experiences .experience-boxes {
+    margin: 0;
+    padding: 0;
+  }
+  section.recent-projects h2 {
+    font-size: 1.6em;
+  }
+  section.recent-projects .recent-project {
+    margin-bottom: 2em;
+  }
+  section.recent-projects .recent-project .recent-project__image {
+    width: 100%;
+    height: 12em;
+  }
+  section.recent-projects .recent-project .recent-project__text {
+    width: 100%;
+    position: unset;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+    height: auto;
+  }
+  section.about .container .about-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2em;
+  }
+  section.about .container .about-box .about-image-box:before {
+    display: none;
+  }
+  section.about .container .about-box .about-image-box img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  section.portfolio .container .portfolio-wrapper {
+    margin-top: 2em;
+  }
 }
