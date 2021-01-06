@@ -902,6 +902,10 @@ section.portfolio{
 
             .portfolio-image{
                 display: flex;
+
+                img{
+                    max-height: 100%;
+                }
             }
             .portfolio-item{
                 max-width: 300px;
@@ -917,12 +921,20 @@ section.portfolio{
                     border: 6px solid #fff;
                     padding: .75em;
                     border-radius: 50%;
-
+                    cursor: pointer;
+                    
                     svg{
                         fill: #fff;
                         font-size: 1.5em;
                         width: 1.2em;
                         height: 1.2em;
+                    }
+                    &:hover{
+                        background: $lightColor;
+
+                        svg{
+                            fill: $darkColor;
+                        }
                     }
                 }
                 .portfolio-text{
